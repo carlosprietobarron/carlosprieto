@@ -1,0 +1,150 @@
+.row-cards{
+    display: grid;
+    grid-gap: .5rem;
+    min-height: 70rem;
+    padding: 18px 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.card {
+    perspective: 150rem;
+    position: relative;
+    &__side {  
+      
+      height: 30rem;
+      width: 100%;
+      backface-visibility: hidden;
+      transition: all 2s;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 3px;
+      box-shadow: 0 1.5rem 7rem rgba(0, 0, 0, 0.589)
+    }
+
+    &__side--front{
+        background-color: whitesmoke;
+    }
+
+    &__side--back{
+        height: 30rem;
+        background-image: linear-gradient(to right bottom, $primary-color-light,$primary-color-dark);
+        transform: rotateY(180deg);
+    }
+
+    &:hover &__side--front{
+        transform: rotateY(180deg) 
+    }
+
+    &:hover &__side--back{
+        transform: rotateY(0deg) 
+    }
+
+    &_img-front {
+        width: 100%;
+        max-height: 30rem;
+    }
+}
+
+.project__card {
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+
+    &-head {
+        text-align: center;
+        height: 15%
+
+        &--h4 {
+            font-size: 2rem;
+            font-weight: 600;
+            
+        }
+    }
+
+    &-body {
+        font-size: 1rem;
+        text-align: justify;
+        background-color:$primary-color-dark;
+        color: $secondary-color-light;
+        height: 75%;
+    }
+
+    &-icons {
+        height: 10%;
+        font-size: 3rem;
+        text-align: right;
+        align-content: flex-end; 
+        padding-top: 2rem;
+    }
+
+}
+
+
+
+
+/* .card {
+    perspective: 150rem;
+    position: relative;
+  }
+  
+  .card__side {      
+    height: 30rem;
+    width: 100%;
+    backface-visibility: hidden;
+    transition: all 2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 7rem rgba(0, 0, 0, 0.589)
+  }
+  
+  .card__side--front {
+    background-color: whitesmoke;
+  }
+  
+  .card__side--back {
+    height: 30rem;
+    background-image: linear-gradient(to right bottom, #C5CAE9,#303F9F);
+    transform: rotateY(180deg);
+  }
+  
+  .card:hover .card__side--front{
+    transform: rotateY(180deg) 
+  }
+  
+  .card:hover .card__side--back{
+    transform: rotateY(0deg) 
+  }
+  
+  .card_img-front {
+    width: 100%;
+    max-height: 30rem;
+  }
+  
+  .project__card {
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+  }
+  
+  .project__card-head {
+    text-align: center;
+    height: 15%
+  }
+  
+  .project__card-head--h4 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .project__card-body {
+    font-size: 1rem;
+          text-align: justify;
+          background-color:#303F9F;
+          color: #e8e4e4;
+          height: 75%;
+  } */
+  
