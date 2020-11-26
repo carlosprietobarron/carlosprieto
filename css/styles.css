@@ -299,9 +299,6 @@ background: #1C1A19;
 }
 
 @media only screen and (max-width: 770px) {
-  #nav-primary {
-    margin-left: 0;
-  }
   
   #salutation {
     min-height: 720px ;
