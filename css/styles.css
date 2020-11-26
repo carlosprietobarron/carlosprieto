@@ -25,14 +25,14 @@ body {
 }
 
 #salutation {
-width: 80%;
+width: 100%;
 background: #1C1A19;
 }
 
 #nav-primary {
-	width: 80%;
+	width: 100%;
 	left: 50%;
-	margin-left: 10%;
+	/* margin-left: 10%; */
 	position: sticky;
 	top: 0;
 	z-index: 100;
@@ -99,7 +99,7 @@ background: #1C1A19;
 }
 
 #projectsdiv {
-  width: 80%;
+  width: 100%;
   background: #fb5604cc;
   padding-bottom: 15px;
 }
@@ -197,7 +197,7 @@ background: #1C1A19;
 }
 
 #aboutme {
-  width: 80%;
+  width: 100%;
   background:#1C1A19;
 }
 
@@ -270,9 +270,15 @@ background: #1C1A19;
   font-size: 2rem;
 }
 
+@media screen and (max-width: 1000px) {
+  #salutation {
+    min-height: 660px;
+  }
+}
+
 @media screen and (min-width: 770px) and (max-width:1200px) {
   #salutation {
-    min-height: 620px ;
+    min-height: 660px ;
   }
 
   #header-project {
@@ -288,8 +294,17 @@ background: #1C1A19;
 }
 
 @media only screen and (max-width: 770px) {
+  #nav-primary {
+    margin-left: 0;
+  }
+  
   #salutation {
     min-height: 720px ;
+  }
+
+  #salutation-lft {
+    padding-right: 10px;
+    height: 650px;
   }
 
   #salutation-rgt svg{
