@@ -70,9 +70,26 @@ background: #1C1A19;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 70%;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.salutation-icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-items: left;
+  width: 100%;
+  justify-content: center;
+}
+
+.salutation-icon-wrapper {
+  margin: 0 .7rem;
+}
+
+.salutation-icon-link {
+  font-size: 1.5rem;
+  color: #4d647b;
 }
 
 #myphoto {
