@@ -31,7 +31,7 @@ background: #1C1A19;
 
 #nav-primary {
 	width: 100%;
-	left: 50%;
+	/* left: 50%; */
 	/* margin-left: 10%; */
 	position: sticky;
 	top: 0;
