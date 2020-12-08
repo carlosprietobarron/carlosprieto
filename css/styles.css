@@ -36,11 +36,29 @@ background: #1C1A19;
 
 #nav-primary {
 	width: 100%;
-	/* left: 50%; */
-	/* margin-left: 10%; */
 	position: sticky;
 	top: 0;
-	z-index: 100;
+	z-index: 99;
+}
+
+#uppericons {
+  position: fixed;
+  width: 100%;
+  /* left: 50%; */
+  top: 0;
+  z-index: 100;
+}
+
+#upper-icons-container {
+  width: 100px;
+  float: right;
+  margin-right: 10%;
+  padding-top: 35px;
+}
+
+#upper-icons-container .salutation-icon-link {
+  font-size: 1rem;
+  color: #bf6f06;
 }
 
 #languages{
@@ -286,6 +304,10 @@ background: #1C1A19;
     max-height: 24rem;
 
   }
+
+  #upper-icons-container {
+    margin-right: 20%;
+  }
 }
 
 @media screen and (min-width: 770px) and (max-width:1200px) {
@@ -307,6 +329,12 @@ background: #1C1A19;
 
 @media only screen and (max-width: 770px) {
   
+  /* #upper-icons-container {
+    margin-left: 95px;
+    margin-top: 35px;
+    float: left;
+  } */
+
   #salutation {
     min-height: 720px ;
   }
@@ -381,5 +409,14 @@ background: #1C1A19;
 
   #aboutme-rgt {
     /* padding-left: 37px; */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  
+  #upper-icons-container {
+    margin-left: 95px;
+    margin-top: 35px;
+    float: left;
   }
 }
