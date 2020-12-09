@@ -274,9 +274,16 @@ background: #1C1A19;
 
 #contact-me {
   background-color: #e86a1e;
+  height: 400px;
+  padding-top: 3rem;
 }
 .page__footer-left {
-	color: darkslategray;
+  color: darkslategray;
+  font-size: 1.5rem;
+}
+
+.half-width {
+  width: 80%;
 }
 .page__footer-right {
   display: flex;
@@ -413,6 +420,13 @@ background: #1C1A19;
 
   #aboutme-rgt {
     /* padding-left: 37px; */
+  }
+
+  .page__footer-icons-container{
+    flex-direction: column;
+    justify-items: left;
+    width: 100%;
+    justify-content: flex-start;
   }
 }
 
