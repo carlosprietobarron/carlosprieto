@@ -216,8 +216,12 @@ background: #1C1A19;
   color: rgb(247, 124, 9);
 }
 
+.project__card-live {
+  color: rgb(247, 124, 9);
+}
+
 .project__card-icons img {
-  max-width: 1.2rem;
+  max-width: 1.7rem;
 }
 
 #aboutme {
@@ -419,4 +423,16 @@ background: #1C1A19;
     margin-top: 35px;
     float: left;
   }
+}
+
+@media only screen and (max-width: 400px) {
+#aboutsvg-cont {
+  height: 43%;
+}
+
+#languages {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 27%;
+}
 }
