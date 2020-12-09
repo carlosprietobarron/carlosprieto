@@ -437,6 +437,11 @@ background: #1C1A19;
     margin-top: 35px;
     float: left;
   }
+
+  page__footer-left {
+    color: darkslategray;
+    font-size: 1.2rem;
+}
 }
 
 @media only screen and (max-width: 400px) {
@@ -448,5 +453,10 @@ background: #1C1A19;
   width: 100%;
   margin-left: 0;
   margin-bottom: 27%;
+}
+
+.page__footer-left {
+	color: darkslategray;
+	font-size: 1.2rem;
 }
 }
