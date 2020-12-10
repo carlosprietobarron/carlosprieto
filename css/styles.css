@@ -43,8 +43,8 @@ background: #1C1A19;
 
 #uppericons {
   position: fixed;
-  width: 100%;
-  /* left: 50%; */
+  /* width: 100%; */
+  left: 80%;
   top: 0;
   z-index: 100;
 }
@@ -319,7 +319,20 @@ background: #1C1A19;
   #upper-icons-container {
     margin-right: 20%;
   }
+
 }
+@media screen and (max-width: 992px)  {
+  #upper-icons-container {
+    width: 0;
+    float: right;
+    /* margin-right: 10%; */
+    padding-top: 0;
+    /* margin-left: -400px; */
+    margin-top: 30px;
+    padding-right: 145px;
+  }
+}
+
 
 @media screen and (min-width: 770px) and (max-width:1200px) {
   #salutation {
@@ -433,9 +446,12 @@ background: #1C1A19;
 @media only screen and (max-width: 600px) {
   
   #upper-icons-container {
-    margin-left: 95px;
-    margin-top: 35px;
-    float: left;
+    margin-left: 0;
+    margin-top: 0;
+    /* float: left; */
+    /* float: left; */
+    padding-top: 69px;
+    padding-right: 650px;
   }
 
   page__footer-left {
