@@ -322,6 +322,14 @@ background: #1C1A19;
 
 }
 @media screen and (max-width: 992px)  {
+  #uppericons {
+    position: fixed;
+    width: 0;
+    left: 75%;
+    top: 0;
+    z-index: 100;
+  }
+
   #upper-icons-container {
     width: 0;
     float: right;
@@ -444,14 +452,21 @@ background: #1C1A19;
 }
 
 @media only screen and (max-width: 600px) {
-  
+  #uppericons {
+    position: fixed;
+    width: auto;
+    /* left: 75%; */
+    top: 73px;
+    z-index: 103;
+  }
+
   #upper-icons-container {
     margin-left: 0;
     margin-top: 0;
+    float: right;
     /* float: left; */
-    /* float: left; */
-    padding-top: 69px;
-    padding-right: 650px;
+    padding-top: 0px;
+    padding-right: 596px;
   }
 
   page__footer-left {
